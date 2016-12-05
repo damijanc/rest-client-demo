@@ -1,6 +1,6 @@
 <?php
 
-namespace AppBundle\Model;
+namespace DataAccess\Model;
 
 use JMS\Serializer\Annotation as JMS;
 
