@@ -1,0 +1,18 @@
+{
+  "data": [
+    {
+          "first_name": "Damijan",
+          "last_name": "Cavar",
+          "gender": "male",
+          "email": "damijanc@github.com",
+          "country": "DE"
+    },
+    {
+          "first_name": "John",
+          "last_name": "Wayne",
+          "gender": "male",
+          "email": "comwboy@gmail.com",
+          "country": "US"
+    }
+  ]
+}

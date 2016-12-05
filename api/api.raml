@@ -1,0 +1,37 @@
+#%RAML 0.8
+title: Simple rest
+version: v1
+baseUri: http://127.0.0.1:8000/api
+/customer:
+  /{id}:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/customerSingleResponse.json
+    patch:
+      body:
+        application/json:
+          example: !include examples/customerSingleResponse.json
+      responses:
+        201:
+          body:
+            application/json:
+              example: !include examples/customerSingleResponse.json
+  /:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/customerListResponse.json
+    post:
+      body:
+        application/json:
+          example: !include examples/customerListResponse.json
+      responses:
+        201:
+          body:
+            application/json:
+              example: !include examples/customerListResponse.json
