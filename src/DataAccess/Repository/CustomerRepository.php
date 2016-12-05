@@ -24,6 +24,16 @@ class CustomerRepository
     /** @var  SerializerInterface */
     protected $serializer;
 
+    /**
+     * CustomerRepository constructor.
+     * @param RestClientInterface $client
+     * @param SerializerInterface $serializer
+     *
+     * @JMS\InjectParams({
+     *     "client" = @JMS\Inject("rest_client"),
+     *     "serializer" = @JMS\Inject("jms_serializer"),
+     * })
+     */
     public function __construct(RestClientInterface $client, SerializerInterface $serializer)
     {
         $this->client = $client;
@@ -51,7 +61,7 @@ class CustomerRepository
         return $data->getData();
     }
 
-    public function saveCustomer(Customer $customer)
+    public function saveCustomer(CustomerModel $customer)
     {
 
     }
