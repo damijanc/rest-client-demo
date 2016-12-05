@@ -51,6 +51,5 @@ class CustomerController
      */
     public function getAction()
     {
-
     }
 }

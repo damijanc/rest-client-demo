@@ -4,7 +4,6 @@ namespace DataAccess\Repository;
 
 use DataAccess\Model\CustomerListModel;
 use DataAccess\Model\CustomerModel;
-use DataAccess\RestClient;
 use DataAccess\RestClientInterface;
 use JMS\DiExtraBundle\Annotation as JMS;
 use JMS\Serializer\SerializerInterface;
@@ -45,11 +44,11 @@ class CustomerRepository
      */
     public function listCustomers()
     {
-         $response = $this->client->get(self::RESOURCE);
-         $body = (string) $response->getBody();
+        $response = $this->client->get(self::RESOURCE);
+        $body = (string) $response->getBody();
          /** @var CustomerListModel $data */
          $data = $this->serializer->deserialize($body, CustomerListModel::class, 'json');
-         return $data->getData();
+        return $data->getData();
     }
 
     public function getCustomerById($customerId)
@@ -63,6 +62,5 @@ class CustomerRepository
 
     public function saveCustomer(CustomerModel $customer)
     {
-
     }
 }

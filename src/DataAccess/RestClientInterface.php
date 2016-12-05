@@ -2,7 +2,6 @@
 
 namespace DataAccess;
 
-
 interface RestClientInterface
 {
     /**

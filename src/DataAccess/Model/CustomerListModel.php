@@ -30,6 +30,4 @@ class CustomerListModel
     {
         $this->data = $data;
     }
-
-
 }
