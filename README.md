@@ -18,3 +18,14 @@ running ```php bin/console server:run```
 ## Tests
 
 To run tests run ```./vendor/bin/phpunit``` in project root
+
+## Mock api runner
+* In order to run mock api that you can use to test your you need to have nodejs installed.
+Then run 
+ ```
+npm install
+npm run-script run
+```
+
+Your mock api will be accessible on ```http://127.0.0.1:3030/api/```
+Check RAML for details.

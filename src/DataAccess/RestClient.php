@@ -37,4 +37,15 @@ class RestClient implements RestClientInterface
         $request = new Request('GET', $url, ['content-type' => 'application\json']);
         return $this->client->send($request);
     }
+
+    /**
+     * @param $url
+     * @param null $body
+     * @return \Psr\Http\Message\ResponseInterface
+     */
+    public function send($url, $body = null)
+    {
+        $request = new Request('GET', $url, ['content-type' => 'application\json'], $body);
+        return $this->client->send($request);
+    }
 }

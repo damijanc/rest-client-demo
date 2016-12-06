@@ -1,0 +1,12 @@
+{
+  "private" : true,
+  "dependencies": {
+    "osprey-mock-service": "0.1.0"
+  },
+  "scripts": {
+    "run": "node_modules/osprey-mock-service/bin/osprey-mock-service.js -f api/api.raml -p 3030"
+  }
+}
+
+
+
