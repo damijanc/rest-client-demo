@@ -52,6 +52,7 @@ class CustomerController
      */
     public function getAction()
     {
-        return [];
+        $data = $this->service->listCustomers();
+        return ['data' => $data];
     }
 }

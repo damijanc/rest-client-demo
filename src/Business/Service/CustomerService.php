@@ -42,4 +42,9 @@ class CustomerService
     public function updateCustomer($json)
     {
     }
+
+    public function listCustomers()
+    {
+        return $this->repository->listCustomers();
+    }
 }

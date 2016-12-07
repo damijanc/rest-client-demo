@@ -15,7 +15,7 @@ use JMS\Serializer\SerializerInterface;
  */
 class CustomerRepository
 {
-    const RESOURCE = '/customer';
+    const RESOURCE = '/api/customer';
 
     /** @var RestClientInterface  */
     protected $client;

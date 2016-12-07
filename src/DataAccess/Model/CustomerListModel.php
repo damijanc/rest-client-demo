@@ -9,7 +9,8 @@ class CustomerListModel
     /**
      * @var CustomerModel[]
      *
-     * @JMS\Type(array<\DataAccess\Model\CustomerModel>)
+     * @JMS\Type("array<DataAccess\Model\CustomerModel>")
+     * @JMS\SerializedName("data")
      */
     protected $data;
 

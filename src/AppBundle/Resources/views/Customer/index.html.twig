@@ -1,8 +1,8 @@
 {% extends 'AppBundle::layout.html.twig' %}
 {% block body %}
     <div class="container">
-        <h2>Basic Table</h2>
-        <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>
+        <h2>Customers</h2>
+        <p>List of customers</p>
         <table class="table">
             <thead>
             <tr>
@@ -12,21 +12,20 @@
             </tr>
             </thead>
             <tbody>
+
+            {% for customer in data %}
             <tr>
-                <td>John</td>
-                <td>Doe</td>
-                <td>john@example.com</td>
+                <td>
+                    {{ customer.firstName }}
+                </td>
+                <td>
+                    {{ customer.lastName }}
+                </td>
+                <td>
+                    {{ customer.email }}
+                </td>
             </tr>
-            <tr>
-                <td>Mary</td>
-                <td>Moe</td>
-                <td>mary@example.com</td>
-            </tr>
-            <tr>
-                <td>July</td>
-                <td>Dooley</td>
-                <td>july@example.com</td>
-            </tr>
+            {% endfor %}
             </tbody>
         </table>
     </div>
