@@ -13,7 +13,7 @@ use Symfony\Component\HttpFoundation\Response;
 /**
  * Class CustomerController
  * @package AppBundle\Controller
- * @R\Route("/api/customer")
+ * @R\Route("/customer")
  */
 class CustomerController
 {
@@ -48,8 +48,10 @@ class CustomerController
     /**
      * @R\Route("", name="customer_get_all")
      * @R\Method("GET")
+     * @R\Template("AppBundle:Customer:index.html.twig")
      */
     public function getAction()
     {
+        return [];
     }
 }

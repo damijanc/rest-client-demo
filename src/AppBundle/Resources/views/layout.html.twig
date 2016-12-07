@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo app</title>
+    {% block head %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
+        <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
+
+        {% block stylesheets %}
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        {% endblock stylesheets %}
+
+        {% block page_stylesheets %}
+        {% endblock page_stylesheets %}
+
+        {% block javascripts_head %}
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        {% endblock javascripts_head %}
+            {% block page_javascripts_head %}
+            {% endblock page_javascripts_head %}
+
+    {% endblock head %}
+
+</head>
+<body>
+
+{% block header %}
+{% endblock header %}
+
+<div class="content">
+    {% block body %}
+    {% endblock body %}
+</div>
+
+{% block footer %}
+
+{% endblock footer %}
+
+</body>
+</html>
