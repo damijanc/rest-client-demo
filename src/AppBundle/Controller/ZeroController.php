@@ -17,7 +17,7 @@ use Symfony\Component\HttpFoundation\Request;
  * we could use chain routers but it is an overkill
  * @see http://symfony.com/doc/current/cmf/book/routing.html
  */
-class ZeroController extends Controller
+class ZeroController
 {
     /**
      * @R\Route("/{url}", name="remove_trailing_slash",
