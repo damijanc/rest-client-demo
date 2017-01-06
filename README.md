@@ -1,5 +1,5 @@
 ![Travis status]
-(https://travis-ci.org/damijanc/simple-rest.svg?branch=master)
+(https://travis-ci.org/damijanc/rest-client-demo.svg?branch=master)
 # simple-rest
 Example rest service using Symfony 3, Doctrine and MariaDB
 
